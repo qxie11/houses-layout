@@ -1,0 +1,18 @@
+<header class="header">
+  <div class="container">
+    <nav class="header__nav">
+      <a href="/" class="header__nav-link">Главная</a>
+      <a href="/questions.html" class="header__nav-link">Наши работы</a>
+      <a href="/catalog.html" class="header__nav-link">Каталог</a>
+      <a href="#" class="header__nav-link">Рассчитать стоимость</a>
+      <a href="#contacts" class="header__nav-link">Контакты</a>
+    </nav>
+
+    <%= require('./networks.ejs')({className: ''}) %>
+    <button class="header__burger">
+      <span class="header__burger-stick"></span>
+      <span class="header__burger-stick"></span>
+      <span class="header__burger-stick"></span>
+    </button>
+  </div>
+</header>

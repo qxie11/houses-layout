@@ -1,0 +1,24 @@
+.questions-materials {
+  padding: 40px 0;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0 auto 30px;
+  }
+
+  &__text {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    span {
+      color: $seagul;
+      font-weight: bold;
+    }
+  }
+}

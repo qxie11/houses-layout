@@ -1,0 +1,32 @@
+.intro {
+  padding: 40px 0;
+
+  &__wrapper {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+
+    &-image {
+      min-height: 500px;
+      background: url(#{$images-path}/house-home-intro.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &-title {
+      font-size: 1.8rem;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+
+    &-p {
+      word-break: break-word;
+      max-width: 80%;
+    }
+
+    &-text {
+      padding-bottom: 150px;
+    }
+  }
+}

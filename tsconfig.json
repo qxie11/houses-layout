@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "Node16",
+    "target": "es5",
+    "allowJs": true,
+    "typeRoots": ["./node_modules/@types"]
+  }
+}

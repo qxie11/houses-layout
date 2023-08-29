@@ -1,0 +1,60 @@
+.guarantees {
+  padding: 40px 0;
+
+  &__title,
+  &__subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-size: 2rem;
+
+    span {
+      color: $seagul;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    @media (max-width: $lg) {
+      flex-direction: column;
+    }
+
+    &-title {
+        margin-bottom: 15px;
+    }
+
+    &-p {
+        font-size: 0.7rem;
+    }
+
+    &-left {
+      flex-basis: 35%;
+    }
+
+    &-right {
+      height: 500px;
+      flex-basis: 65%;
+    }
+
+    &-option {
+      border-radius: 10px;
+      padding: 25px;
+      cursor: pointer;
+
+      &.active {
+        border: 1px solid $cod-gray;
+      }
+    }
+
+    &-img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

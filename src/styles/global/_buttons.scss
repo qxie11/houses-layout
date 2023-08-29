@@ -1,0 +1,25 @@
+.btn {
+  outline: none;
+  padding: 20px 25px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+}
+
+.blue-btn {
+  @extend .btn;
+  background-color: $seagul;
+  color: $white;
+
+  &:hover {
+    background-color: $black;
+  }
+}
+
+.white-btn {
+  @extend .btn;
+  color: $black;
+  background: $white;
+  border-radius: 7px;
+}

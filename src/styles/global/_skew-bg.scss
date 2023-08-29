@@ -1,0 +1,20 @@
+.skew-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 15vw;
+  width: 40%;
+  transform: skew(-30deg, 0);
+  transform-origin: bottom left;
+  overflow: hidden;
+
+  &-cover {
+    position: absolute;
+    top: 0;
+    right: -30vw;
+    bottom: 0;
+    left: 0;
+    transform: skew(30deg, 0);
+    transform-origin: bottom left;
+  }
+}

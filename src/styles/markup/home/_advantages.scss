@@ -1,0 +1,29 @@
+.advantages {
+  padding: 40px 0;
+  background-color: $black;
+  color: $white;
+
+  &__list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: $lg) {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &-title {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    &-subtitle {
+      text-align: center;
+      font-size: 0.8rem;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.footer {
+  padding: 60px 0;
+  background-color: $black;
+  color: $white;
+  text-align: center;
+
+  &__container {
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+
+    span {
+      font-size: 1rem;
+    }
+  }
+
+  &__wrapper {
+    margin-bottom: 25px;
+
+    &-address {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+
+    &-tel,
+    &-email {
+      color: rgba($white, 0.6);
+      display: block;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__networks {
+    gap: 10px;
+    justify-content: center;
+  }
+}

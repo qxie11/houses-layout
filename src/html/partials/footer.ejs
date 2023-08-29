@@ -1,0 +1,20 @@
+<footer id="contacts" class="footer">
+  <div class="container">
+    <div class="footer__container">
+      <h2 class="footer__title">
+        Связаться с нами <br />
+        <span>легко и просто</span>
+      </h2>
+      <address class="footer__wrapper">
+        <p class="footer__wrapper-address">Адрес: Россия Матушка</p>
+        <a href="tel:+11234567890" class="footer__wrapper-tel"
+          ><span>Телефон:</span> +1 123 4567890</a
+        >
+        <a href="mailto:hello@vysota.ru" class="footer__wrapper-email"
+          ><span>Email:</span> hello@vysota.ru</a
+        >
+      </address>
+      <%= require('./networks.ejs')({className: 'footer__networks'}) %>
+    </div>
+  </div>
+</footer>

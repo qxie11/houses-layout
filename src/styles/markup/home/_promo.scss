@@ -1,0 +1,67 @@
+.promo {
+  padding-bottom: 40px;
+  position: relative;
+  color: $white;
+  background: $cod-gray;
+  overflow-x: hidden;
+
+  @media (max-width: 1500px) {
+    min-height: 100vh;
+  }
+
+  &__logo {
+    width: 130px;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 15%;
+    margin-right: auto;
+
+    @media (max-width: $md) {
+      margin-left: auto;
+    }
+  }
+
+  &__title {
+    margin-bottom: 45px;
+    text-align: left;
+    max-width: 565px;
+  }
+
+  &__subtitle {
+    margin-bottom: 30px;
+  }
+
+  &__title,
+  &__subtitle {
+    @media (max-width: $md) {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__contact {
+    display: inline-block;
+
+    @media (max-width: $md) {
+      display: block;
+      margin: 0 auto;
+      max-width: 80%;
+      text-align: center;
+    }
+  }
+
+  &__bg {
+    @media (max-width: $lg) {
+      display: none;
+    }
+
+    &-cover {
+      background: url(#{$images-path}/house-home-promo.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+}

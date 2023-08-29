@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%= require('../partials/head.ejs')({ title: 'Каталог' }) %>
+  <body>
+    <main>
+      <section class="catalog-promo">
+        <%= require('../partials/header.ejs')() %>
+        <div class="container">
+          <h1 class="title catalog-promo__title">
+            Каталог проектов домов и коттеджей
+          </h1>
+        </div>
+      </section>
+      <section class="catalog-list">
+        <div class="container">
+          <p class="catalog-list__text">
+            За годы работы наша команда возвела несколько сотен домов в разных
+            уголках Москвы и Московской области для очень разных семей. Кто-то
+            предпочитает камерные одноэтажные дома, кто-то — особняки в
+            несколько сотен квадратных метров: мы работаем с каждым запросом и
+            создаем дома, учитывая Вашу индивидуальность.
+          </p>
+        </div>
+        <div class="catalog-list__wrapper">
+          <ul class="catalog-list__grid container">
+            <li class="catalog-list__grid-item">
+              <img
+                class="catalog-list__grid-img"
+                src="<%= require('@images/house-home-accordion-1.jpeg') %>"
+                alt="house"
+              />
+              <h3 class="catalog-list__grid-title">
+                КП "Мечта", Саратовская область
+              </h3>
+              <p class="catalog-list__grid-subtitle">190 дней, 270 кв.м.</p>
+              <button class="catalog-list__grid-btn">
+                Узнать стоимость р.
+              </button>
+            </li>
+            <li class="catalog-list__grid-item">
+              <img
+                class="catalog-list__grid-img"
+                src="<%= require('@images/house-home-accordion-1.jpeg') %>"
+                alt="house"
+              />
+              <h3 class="catalog-list__grid-title">
+                КП "Мечта", Саратовская область
+              </h3>
+              <p class="catalog-list__grid-subtitle">190 дней, 270 кв.м.</p>
+              <button class="catalog-list__grid-btn">
+                Узнать стоимость р.
+              </button>
+            </li>
+            <li class="catalog-list__grid-item">
+              <img
+                class="catalog-list__grid-img"
+                src="<%= require('@images/house-home-accordion-1.jpeg') %>"
+                alt="house"
+              />
+              <h3 class="catalog-list__grid-title">
+                КП "Мечта", Саратовская область
+              </h3>
+              <p class="catalog-list__grid-subtitle">190 дней, 270 кв.м.</p>
+              <button class="catalog-list__grid-btn">
+                Узнать стоимость р.
+              </button>
+            </li>
+            <li class="catalog-list__grid-item">
+              <img
+                class="catalog-list__grid-img"
+                src="<%= require('@images/house-home-accordion-1.jpeg') %>"
+                alt="house"
+              />
+              <h3 class="catalog-list__grid-title">
+                КП "Мечта", Саратовская область
+              </h3>
+              <p class="catalog-list__grid-subtitle">190 дней, 270 кв.м.</p>
+              <button class="catalog-list__grid-btn">
+                Узнать стоимость р.
+              </button>
+            </li>
+            <li class="catalog-list__grid-item">
+              <img
+                class="catalog-list__grid-img"
+                src="<%= require('@images/house-home-accordion-1.jpeg') %>"
+                alt="house"
+              />
+              <h3 class="catalog-list__grid-title">
+                КП "Мечта", Саратовская область
+              </h3>
+              <p class="catalog-list__grid-subtitle">190 дней, 270 кв.м.</p>
+              <button class="catalog-list__grid-btn">
+                Узнать стоимость р.
+              </button>
+            </li>
+            <li class="catalog-list__grid-item">
+              <img
+                class="catalog-list__grid-img"
+                src="<%= require('@images/house-home-accordion-1.jpeg') %>"
+                alt="house"
+              />
+              <h3 class="catalog-list__grid-title">
+                КП "Мечта", Саратовская область
+              </h3>
+              <p class="catalog-list__grid-subtitle">190 дней, 270 кв.м.</p>
+              <button class="catalog-list__grid-btn">
+                Узнать стоимость р.
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="catalog-contact">
+        <div class="container">
+          <h2 class="catalog-contact__title">
+            Не нашли проект Дома Мечты в нашем каталоге? <br />
+            Закажите свой индивидуальный проект в
+            <span>"Строй Высота"</span> прямо сейчас
+          </h2>
+          <%= require('../partials/contact-form.ejs')({ legend: `Рассчитать
+          стоимость строительства` }) %>
+        </div>
+      </section>
+      <section class="catalog-advantages">
+        <div class="catalog-advantages__title-wrap">
+          <div class="container">
+            <h2 class="catalog-advantages__title">
+              Строить дом под ключ в <span>"Строй Высота"</span> выгодно, потому
+              что мы:
+            </h2>
+          </div>
+        </div>
+        <div class="container">
+          <ul class="catalog-advantages__grid">
+            <li class="catalog-advantages__grid-item">
+              <h3 class="catalog-advantages__grid-title">Удобная оплата</h3>
+              <p class="catalog-advantages__grid-subtitle">
+                Мы работает по системе без предоплаты на всех этапах возведения
+                дома под ключ
+              </p>
+            </li>
+            <li class="catalog-advantages__grid-item">
+              <h3 class="catalog-advantages__grid-title">Удобная оплата</h3>
+              <p class="catalog-advantages__grid-subtitle">
+                Мы работает по системе без предоплаты на всех этапах возведения
+                дома под ключ
+              </p>
+            </li>
+            <li class="catalog-advantages__grid-item">
+              <h3 class="catalog-advantages__grid-title">Удобная оплата</h3>
+              <p class="catalog-advantages__grid-subtitle">
+                Мы работает по системе без предоплаты на всех этапах возведения
+                дома под ключ
+              </p>
+            </li>
+            <li class="catalog-advantages__grid-item">
+              <h3 class="catalog-advantages__grid-title">Удобная оплата</h3>
+              <p class="catalog-advantages__grid-subtitle">
+                Мы работает по системе без предоплаты на всех этапах возведения
+                дома под ключ
+              </p>
+            </li>
+            <li class="catalog-advantages__grid-item">
+              <h3 class="catalog-advantages__grid-title">Удобная оплата</h3>
+              <p class="catalog-advantages__grid-subtitle">
+                Мы работает по системе без предоплаты на всех этапах возведения
+                дома под ключ
+              </p>
+            </li>
+            <li class="catalog-advantages__grid-item">
+              <h3 class="catalog-advantages__grid-title">Удобная оплата</h3>
+              <p class="catalog-advantages__grid-subtitle">
+                Мы работает по системе без предоплаты на всех этапах возведения
+                дома под ключ
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <%= require('../partials/gallery.ejs')() %>
+    </main>
+    <%= require('../partials/footer.ejs')() %>
+  </body>
+</html>

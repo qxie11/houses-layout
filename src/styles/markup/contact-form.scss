@@ -1,0 +1,37 @@
+.form {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  background: linear-gradient(
+      to top,
+      rgba(43, 110, 155, 0.7),
+      rgba(71, 154, 209, 0.7)
+    ),
+    url(#{$images-path}/house-home-promo.jpg) center center / cover;
+
+  &__legend {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.6rem;
+    color: $white;
+    margin: 0 auto;
+
+    span {
+      font-size: 1rem;
+    }
+  }
+
+  &__wrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+
+    @media (max-width: $md) {
+      input {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%= require('../partials/head.ejs')({ title: 'Главная' }) %>
+  <body>
+    <section class="promo">
+      <%= require('../partials/header.ejs')() %>
+      <div class="container">
+        <img class="promo__logo" src="<%= require("@icons/logo.png") %>" alt="Logo">
+        <h1 class="title promo__title">
+          Строительство домов и коттеджей под ключ
+        </h1>
+        <p class="promo__subtitle">
+          Комфортное жильё <br />
+          для процветания вашей семьи
+        </p>
+        <a href="#footer" class="blue-btn promo__contact">Связаться</a>
+      </div>
+      <div class="skew-bg promo__bg">
+        <div class="skew-bg-cover promo__bg-cover"></div>
+      </div>
+    </section>
+    <section class="intro">
+      <div class="container">
+        <div class="intro__wrapper">
+          <div class="intro__wrapper-image"></div>
+          <div class="intro__wrapper-text">
+            <h2 class="title intro__wrapper-title">
+              Строительная компания «Строй Высота»
+            </h2>
+
+            <p class="intro__wrapper-p">
+              - это профессиональная команда, специализирующаяся на
+              строительстве и ремонте коттеджей. Мы предлагаем полный спектр
+              услуг по проектированию, строительству, ремонту и отделке
+              коттеджей.
+            </p>
+            <p class="intro__wrapper-p">
+              При строительстве мы учитываем все пожелания и требования
+              заказчиков, а также соблюдаем все нормы и стандарты строительства.
+            </p>
+            <p class="intro__wrapper-p">
+              Мы гарантируем индивидуальный подход к каждому и быстрое
+              выполнение работ.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="container">
+        <ul class="advantages__list">
+          <li>
+            <h2 class="advantages__list-title">Гарантия на дом</h2>
+            <p class="advantages__list-subtitle">15 лет</p>
+          </li>
+          <li>
+            <h2 class="advantages__list-title">Застройка</h2>
+            <p class="advantages__list-subtitle">от 3-х месяцев</p>
+          </li>
+          <li>
+            <h2 class="advantages__list-title">Удобная оплата</h2>
+            <p class="advantages__list-subtitle">
+              обсуждаем оплату на этапе договора
+            </p>
+          </li>
+          <li>
+            <h2 class="advantages__list-title">Бесплатный</h2>
+            <p class="advantages__list-subtitle">выезд замерщика</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="portfolio">
+      <div class="container">
+        <h2 class="title portfolio__title">
+          <span>ПОЛНЫЙ КОМПЛЕКС СТРОИТЕЛЬНЫХ УСЛУГ</span>
+          <br />
+          Мы строим под ключ
+        </h2>
+        <p class="portfolio__subtitle">
+          Если вы еще не знаете из какого материала построить дом, наши опытные
+          архитекторы и инженеры подробно вас проконсультируют и предложат
+          оптимальное решение, опираясь на ваши предпочтения и параметры
+          участка.
+        </p>
+      </div>
+      <div class="portfolio__grid-wrapper">
+        <div class="container">
+          <div class="portfolio__grid">
+            <img src="<%= require("@images/house-home-portfolio-1.jpg") %>"
+            alt="house"> <img src="<%=
+            require("@images/house-home-portfolio-2.jpg") %>" alt="house"> <img
+            src="<%= require("@images/house-home-portfolio-3.jpg") %>"
+            alt="house"> <img src="<%=
+            require("@images/house-home-portfolio-4.jpg") %>" alt="house"> <img
+            src="<%= require("@images/house-home-portfolio-5.jpg") %>"
+            alt="house">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="guarantees">
+      <div class="container">
+        <h2 class="title guarantees__title">
+          Берем на себя полную ответственность и даём
+          <span>гарантию качества</span>
+        </h2>
+        <p class="guarantees__subtitle">Все условия прописываем в договоре</p>
+        <div class="guarantees__wrapper">
+          <div class="guarantees__wrapper-left">
+            <div
+              data-img="house-home-accordion-1.jpeg"
+              class="guarantees__wrapper-option"
+            >
+              <h3 class="guarantees__wrapper-title">Соблюдаем сроки</h3>
+              <p class="guarantees__wrapper-p">
+                Несем ответственность за соблюдение сроков выполнения работ
+              </p>
+            </div>
+            <div
+              data-img="house-home-accordion-2.jpeg"
+              class="guarantees__wrapper-option"
+            >
+              <h3 class="guarantees__wrapper-title">
+                Один подрядчик на все виды работ
+              </h3>
+              <p class="guarantees__wrapper-p">Вы защищены от ошибок</p>
+            </div>
+            <div
+              data-img="house-home-accordion-3.jpeg"
+              class="guarantees__wrapper-option"
+            >
+              <h3 class="guarantees__wrapper-title">
+                Смета без скрытых платежей
+              </h3>
+              <p class="guarantees__wrapper-p">
+                Экономим ваш бюджет. <br />
+                Покупаем материалы по оптовым ценам
+              </p>
+            </div>
+          </div>
+          <div class="guarantees__wrapper-right">
+            <img class="guarantees__wrapper-img" src="" alt="house" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="questions">
+      <div class="container">
+        <h2 class="questions__title">
+          Есть вопросы? <br />
+          Мы постараемся на них ответить
+        </h2>
+        <button class="blue-btn questions__btn">Перейти в раздел</button>
+      </div>
+      <div class="skew-bg questions__bg">
+        <div class="skew-bg-cover questions__bg-cover"></div>
+      </div>
+    </section>
+    <section class="algorithm">
+      <div class="container">
+        <p class="algorithm__text">
+          В своей работе мы нацелены не только качественный результат, но и на
+          комфортный процесс постройки загородного дома. Поэтому мы работаем по
+          принципу «минимум затрат личного времени клиента без потери качества
+          услуг», обеспечивая возможность частичного дистанционного
+          взаимодействия по вопросам проектирования и строительства. Это
+          особенно важно, когда речь идет о возведении дома в Москве и
+          Московской области — столичный ритм жизни требует рационального
+          распределения времени. С компанией <span>"Строй Высота"</span> Вы
+          получаете результат не покидая своей локации и не тратя лишнего
+          времени:
+        </p>
+        <ul class="algorithm__steps">
+          <li class="algorithm__steps-step">
+            <span class="algorithm__steps-num">1</span>
+            <h3 class="algorithm__steps-title">
+              Консультации по вопросам создания проекта и строительства дома под
+              ключ
+            </h3>
+            <p class="algorithm__steps-text">
+              Производятся в удобное для Вас время любым удобным способом:
+              почта, телефон, чат или мессенджер.
+            </p>
+          </li>
+          <li class="algorithm__steps-step">
+            <span class="algorithm__steps-num">2</span>
+            <h3 class="algorithm__steps-title">Встреча с архитектором</h3>
+            <p class="algorithm__steps-text">
+              Архитектор встретит Вас в офисе компании недалеко от центра
+              Москвы, или сам приедет к Вам на встречу, если это будет
+              необходимо. Также мы можем вызвать Вам бесплатное такси до нашего
+              офиса.
+            </p>
+          </li>
+          <li class="algorithm__steps-step">
+            <span class="algorithm__steps-num">3</span>
+            <h3 class="algorithm__steps-title">
+              Создание проекта дома и подписание договоров
+            </h3>
+            <p class="algorithm__steps-text">
+              Согласовать проектную документацию, подписать договор на
+              проектирование дома и договор строительного подряда возможно
+              удаленно по Вашему желанию - согласованные документы привезет
+              курьер в удобное для Вас место и время.
+            </p>
+          </li>
+          <li class="algorithm__steps-step">
+            <span class="algorithm__steps-num">4</span>
+            <h3 class="algorithm__steps-title">Строительство дома</h3>
+            <p class="algorithm__steps-text">
+              Наши специалисты заблаговременно предупредят Вас об окончании
+              каждого этапа строительных работ, направят фотоотчеты и ответят на
+              все интересующие Вас вопросы.
+            </p>
+          </li>
+        </ul>
+        <%= require('../partials/contact-form.ejs')({ legend: `Хотите построить
+        свой дом, но не знаете с чего начать?
+        <br />
+        <span>Мы ответим на все ваши вопросы</span>` }) %>
+      </div>
+    </section>
+    <%= require('../partials/footer.ejs')() %>
+  </body>
+</html>
